@@ -44,4 +44,4 @@ To install this transformer, add the following lines to your [`.parcelrc`](https
 }
 ```
 
-**Note:* It is important that `@anteris/parcel-transformer-html-literals` be the first transformer in the list.
+**Note:** It is important that `@anteris/parcel-transformer-html-literals` be the first transformer in the list.
