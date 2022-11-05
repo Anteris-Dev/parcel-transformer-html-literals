@@ -10,7 +10,7 @@
     "cleanup": "rm -rf .parcel-cache && rm -rf dist && rm -rf dist-optimized"
   },
   "devDependencies": {
-    "@anteris/parcel-transformer-html-literals": "file:..",
+    "@anteris/parcel-transformer-html-literals": "file:../",
     "@parcel/types": "^2.7.0",
     "chai": "^4.3.6",
     "lit": "^2.4.1",
