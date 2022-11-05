@@ -1,0 +1,27 @@
+{
+  "name": "@anteris/parcel-transformer-html-literals",
+  "version": "0.1.0",
+  "description": "Optimizes CSS and HTML template literals that are typically ignored by Parcel.",
+  "author": "Aidan Casey <aidan.casey@anteris.com>",
+  "license": "MIT",
+  "souce": "src/HtmlLiteralTransformer.ts",
+  "main": "dist/HtmlLiteralTransformer.js",
+  "scripts": {
+    "build": "parcel build src/HtmlLiteralTransformer.ts",
+    "test": "cd tests && npm run test"
+  },
+  "engines": {
+    "node": ">=14.x",
+    "parcel": "^2.x"
+  },
+  "devDependencies": {
+    "@parcel/types": "^2.7.0",
+    "@tsconfig/node14": "^1.0.3",
+    "parcel": "^2.7.0",
+    "typescript": "^4.8.4"
+  },
+  "dependencies": {
+    "@parcel/plugin": "^2.7.0",
+    "minify-html-literals": "^1.3.5"
+  }
+}

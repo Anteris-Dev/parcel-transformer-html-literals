@@ -1,0 +1,7 @@
+{
+    "extends": "@tsconfig/node14/tsconfig.json",
+    "include": [
+        "src/HtmlLiteralTransformer.ts"
+    ],
+    "exclude": ["node_modules"]
+}

@@ -1,0 +1,5 @@
+.idea/
+.parcel-cache/
+src/
+node_modules/
+tests/

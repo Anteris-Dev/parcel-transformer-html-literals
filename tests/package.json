@@ -1,0 +1,20 @@
+{
+  "name": "parcel-optimizer-literals-tests",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "test": "cd ../ && npm install && cd tests && npm run build && npm i && mocha run-tests.js && npm run cleanup",
+    "build": "npm run build-dev && npm run build-prod",
+    "build-dev": "parcel build ./src/custom-element.js --no-cache --no-optimize",
+    "build-prod": "parcel build ./src/custom-element.js --no-cache --dist-dir dist-optimized",
+    "cleanup": "rm -rf .parcel-cache && rm -rf dist && rm -rf dist-optimized"
+  },
+  "devDependencies": {
+    "@anteris/parcel-transformer-html-literals": "file:..",
+    "@parcel/types": "^2.7.0",
+    "chai": "^4.3.6",
+    "lit": "^2.4.1",
+    "mocha": "^10.1.0",
+    "parcel": "^2.7.0"
+  }
+}
